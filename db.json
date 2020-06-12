@@ -4,65 +4,64 @@
       "id": 1,
       "food": "Les vraies carbonara italiennes",
       "price": "15",
-      "image":"https://img.cuisineaz.com/400x320/2016-03-15/i95565-les-vraies-carbonara-italiennes.jpg"
+      "image": "https://img.cuisineaz.com/400x320/2016-03-15/i95565-les-vraies-carbonara-italiennes.jpg"
     },
     {
       "id": 2,
       "food": "Pasta alla norma",
       "price": "25",
-      "image":"https://static01.nyt.com/images/2013/06/26/dining/26JPFLEX1/26JPFLEX1-articleLarge-v3.jpg"
+      "image": "https://static01.nyt.com/images/2013/06/26/dining/26JPFLEX1/26JPFLEX1-articleLarge-v3.jpg"
     },
     {
       "id": 3,
       "food": "Spaghettis bolognaise",
       "price": "13",
-      "image":"https://storenotrefamilleprod.blob.core.windows.net/images/cms/recette/29662/29662_large.jpg"
+      "image": "https://storenotrefamilleprod.blob.core.windows.net/images/cms/recette/29662/29662_large.jpg"
     },
     {
       "id": 4,
       "food": "Cannellonis au boeuf et à la ricotta",
       "price": "25",
-      "image":"https://img.cuisineaz.com/400x320/2015-12-15/i90681-cannellonis-au-boeuf-et-a-la-ricotta.jpg"
+      "image": "https://img.cuisineaz.com/400x320/2015-12-15/i90681-cannellonis-au-boeuf-et-a-la-ricotta.jpg"
     },
     {
       "id": 5,
       "food": "Spaghettis alla puttanesca",
       "price": "11",
-      "image":"https://img.cuisineaz.com/610x610/2013-12-20/i69521-spaghetti-alla-puttanesca.jpg"
+      "image": "https://img.cuisineaz.com/610x610/2013-12-20/i69521-spaghetti-alla-puttanesca.jpg"
     },
     {
       "id": 6,
       "food": "Pennes à la napolitaine",
       "price": "14",
-      "image":"https://img.cuisineaz.com/400x320/2013-12-20/i107771-pennes-a-la-napolitaine.jpg"
+      "image": "https://img.cuisineaz.com/400x320/2013-12-20/i107771-pennes-a-la-napolitaine.jpg"
     },
     {
       "id": 7,
       "food": "Pasta alle zucchine (pâtes aux courgettes)",
       "price": "15",
-      "image":"https://img.cuisineaz.com/400x320/2017-01-16/i115710-.jpeg"
+      "image": "https://img.cuisineaz.com/400x320/2017-01-16/i115710-.jpeg"
     },
     {
       "id": 8,
       "food": "Ravioles de poulet, sauce gorgonzola",
       "price": "19",
-      "image":"https://www.ptitchef.com/imgupl/recipe/ravioles-poulet-potiron-sauce-gorgonzola-et-noix--md-424750p661185.jpg"
+      "image": "https://www.ptitchef.com/imgupl/recipe/ravioles-poulet-potiron-sauce-gorgonzola-et-noix--md-424750p661185.jpg"
     },
     {
       "id": 9,
       "food": "Lasagnes sauce bolognaise",
       "price": "17",
-      "image":"https://assets.afcdn.com/recipe/20180119/76936_w854h854c1cxt0cyt0cxb5361cyb3573.jpg"
+      "image": "https://assets.afcdn.com/recipe/20180119/76936_w854h854c1cxt0cyt0cxb5361cyb3573.jpg"
     },
     {
       "id": 10,
       "food": "Pasta pezoti (penne sauce aux tomates et anchois)",
       "price": "15",
-      "image":"https://assets.afcdn.com/recipe/20100120/49265_w1024h768c1cx256cy192.jpg"
+      "image": "https://assets.afcdn.com/recipe/20100120/49265_w1024h768c1cx256cy192.jpg"
     }
   ],
-  "myMenu": [
-  ],
+  "myMenu": [],
   "profile": {
     "name": "typicode"
   }
