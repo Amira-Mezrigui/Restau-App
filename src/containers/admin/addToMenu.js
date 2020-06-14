@@ -29,7 +29,7 @@ onClickHandler =() =>{
     "image":this.props.image
 
     }
-  )
+  );
 }
     render(){
     

@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
 import {getMenuFromApi, removeMenu} from '../../actions/menuAction'
 import {removeFromApi} from '../../actions/menuAction'
+import {editToApi} from '../../actions/menuAction'
 import { Grid, Image, Divider } from 'semantic-ui-react'
 import { AddToMenu } from './addToMenu'
 import {connect} from 'react-redux'
 
 export class AdminInterface extends Component {
+  constructor(props){
+    super(props);
+    this.state={
+      isClicked:false,
+      food:"",
+      price:"",
+    }
+  }
   //get menu from API
   componentDidMount() {
     this.props.getMenu();
@@ -15,6 +24,25 @@ export class AdminInterface extends Component {
   window.location.reload(true)
   this.props.removeMenu(id);
   } 
+  // EDIT to API
+  handleFoodChange = event => {
+    this.setState({ food: event.target.value });
+  }
+handlePriceChange = event => {
+    this.setState({ price: event.target.value });
+  }
+  edit = (id) =>{
+  if(this.state.isClicked==false){
+    this.setState({isClicked:true})
+  }
+  else if(this.state.isClicked){
+  this.props.editMenu(id,{
+    "food":this.state.food,
+    "price":this.state.price
+  })
+  this.setState({isClicked:false})
+  }
+    } 
   render() {
     return (
       <Grid>
@@ -26,9 +54,19 @@ export class AdminInterface extends Component {
 {this.props.menu.map(el =>
       <Grid.Column>
       <Image src={el.image} size='tiny' verticalAlign='middle' />{' '}
-      <span>{el.food}, {el.price} Dt</span><br/>
+      {(this.state.isClicked==true)?(
+        <div>
+        <label> Modifier le plat : <br/>
+        <input type="text" name="name" value={this.state.food} onChange={this.handleFoodChange}/>
+        </label> 
+        <label> Modifier le prix: <br/>
+        <input type="text" name="username"   value={this.state.price} onChange={this.handlePriceChange}/>
+        </label>
+        </div>
+      ):<div><span>{el.food}, {el.price} Dt</span><br/></div>
+      }
           <button onClick={()=> this.delete(el.id)}>✖️</button>
-          <button>... </button>
+          <button onClick={()=>this.edit(el.id)}>... </button>
       
       <Divider />
     </Grid.Column>
@@ -49,6 +87,7 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = (dispatch) => ({
     getMenu: () => dispatch(getMenuFromApi()),
     removeMenu: (res) => dispatch(removeFromApi(res)),
+    editMenu: (id,res) => dispatch(editToApi(id,res)),
   });
 
   export default connect(mapStateToProps, mapDispatchToProps)(AdminInterface)

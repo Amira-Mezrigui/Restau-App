@@ -1,6 +1,7 @@
 import {GET_MENU} from './types'
 import {ADD_MENU} from './types'
 import {REMOVE_MENU} from './types'
+import {EDIT_MENU} from './types'
 import axios from 'axios'
 
 // GET REQUEST , get menu
@@ -23,9 +24,9 @@ export function getMenuFromApi() {
     payload
 });
 
-export function addToApi(res) {
+export function addToApi(a) {
     return (dispatch) =>
-      axios.post("http://localhost:3000/menu",res)
+      axios.post("http://localhost:3000/menu",a)
       .then((res) =>
         dispatch(addMenu(res.data))
         
@@ -46,3 +47,17 @@ export function removeFromApi(res) {
         
       );
   }
+    // EDIT REQUEST 
+    export const editMenu =(payload) =>({
+      type:EDIT_MENU,
+      payload
+  });
+  
+  export function editToApi(id,res) {
+      return (dispatch) =>
+        axios.put("http://localhost:3000/menu/"+id,res)
+        .then((res) =>
+          dispatch(editMenu(res.data))
+          
+        );
+    }

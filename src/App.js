@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 import MenuContainer  from './containers/menu';
 import AdminInterface from './containers/admin/index';
+import Navbar from './components/navbar';
 
 function App() {
   return (
@@ -11,8 +12,6 @@ function App() {
       <div className="App"> 
       <AdminInterface/>
       <MenuContainer/>
-      
-      
       </div>
     </Provider>
     
