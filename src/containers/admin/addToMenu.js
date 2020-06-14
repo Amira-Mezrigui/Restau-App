@@ -50,7 +50,7 @@ onClickHandler =() =>{
         
     </Modal.Content>
     <Modal.Actions>
-      <Button color='green' onClick={this.onClickHandler}>
+      <Button color='green' onClick={()=>this.onClickHandler()}>
         <Icon name='checkmark' />   add
       </Button>
     </Modal.Actions>

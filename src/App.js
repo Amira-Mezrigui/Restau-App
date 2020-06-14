@@ -3,15 +3,15 @@ import './App.css';
 import { Provider } from 'react-redux';
 import store from './store';
 import MenuContainer  from './containers/menu';
-import AddToMenu from './containers/admin/addToMenu';
+import AdminInterface from './containers/admin/index';
 
 function App() {
   return (
     <Provider store={store}>
-      <div className="App">
-      
+      <div className="App"> 
+      <AdminInterface/>
       <MenuContainer/>
-      <AddToMenu/>  
+      
       
       </div>
     </Provider>
