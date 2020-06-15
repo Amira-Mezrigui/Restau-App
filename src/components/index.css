@@ -1,0 +1,22 @@
+/*footer*/
+.section-padding {
+	padding: 20px 0;
+}
+.bottom {
+    background-color: black;
+}
+.bottom .copyright {
+    color: #FFF;
+    font-weight: 600;
+}
+
+.bottom p {
+    margin-bottom: 0;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.bottom .copyright p {
+    color: #FFF;
+}
