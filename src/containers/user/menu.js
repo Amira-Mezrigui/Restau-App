@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import {getMenuFromApi} from '../../actions/menuAction'
+import {addCardToApi} from '../../actions/cardAction'
 import {connect} from 'react-redux'
 
 export class MenuContainer extends Component {
+  
   componentDidMount() {
     this.props.getMenu();
   }  
@@ -19,7 +21,13 @@ export class MenuContainer extends Component {
               
             </div>
             <img className="card-img-bottom" src={el.image} />
-            <button >☑️</button>
+            <button onClick={() =>
+              this.props.addTocard({
+                "image": el.image,
+                "name": el.food,
+                "price": el.price,
+                "quantity":1,
+              })}>☑️</button>
             <button> ✖️ </button>
             </div>
         
@@ -29,10 +37,12 @@ export class MenuContainer extends Component {
   }
 }
 const mapStateToProps = (state) => ({
-    menu:state.menu
+    menu:state.menu,
+    card:state.card
 })
 const mapDispatchToProps = (dispatch) => ({
     getMenu: () => dispatch(getMenuFromApi()),
+    addTocard: (res) => dispatch(addCardToApi(res))
   });
 
   export default connect(mapStateToProps, mapDispatchToProps)(MenuContainer);

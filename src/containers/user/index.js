@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import MenuContainer from './menu';
 import './index.css'
+import Card from './Card';
 
 
 export class ContainerUser extends Component {
@@ -35,7 +36,7 @@ export class ContainerUser extends Component {
 	</div>
 </header>
 <MenuContainer/>
-       
+       <Card/>
       </div>
     );
   }

@@ -63,17 +63,33 @@
     {
       "id": 11,
       "food": "Pasta pezoti (penne sauce aux tomates et anchois)",
-      "price": "100",
-      "image": "https://assets.afcdn.com/recipe/20100120/49265_w1024h768c1cx256cy192.jpg"
-    },
-    {
-      "id": 12,
-      "food": "Pasta pezoti (penne sauce aux tomates et anchois)",
-      "price": "10",
+      "price": "100000",
       "image": "https://assets.afcdn.com/recipe/20100120/49265_w1024h768c1cx256cy192.jpg"
     }
   ],
-  "myMenu": [],
+  "card": [
+    {
+      "image": "https://assets.afcdn.com/recipe/20100120/49265_w1024h768c1cx256cy192.jpg",
+      "name": "Pasta pezoti (penne sauce aux tomates et anchois)",
+      "price": "15",
+      "quantity": 1,
+      "id": 1
+    },
+    {
+      "image": "https://img.cuisineaz.com/400x320/2013-12-20/i107771-pennes-a-la-napolitaine.jpg",
+      "name": "Pennes à la napolitaine",
+      "price": "14",
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "image": "https://assets.afcdn.com/recipe/20180119/76936_w854h854c1cxt0cyt0cxb5361cyb3573.jpg",
+      "name": "Lasagnes sauce bolognaise",
+      "price": "17",
+      "quantity": 1,
+      "id": 3
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
