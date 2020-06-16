@@ -11,8 +11,8 @@ export class AdminInterface extends Component {
     super(props);
     this.state={
       isClicked:false,
-      food:"",
-      price:"",
+      food:this.props.menu.food,
+      price:this.props.menu.price,
     }
   }
   //get menu from API
@@ -38,7 +38,8 @@ handlePriceChange = event => {
   else if(this.state.isClicked){
   this.props.editMenu(id,{
     "food":this.state.food,
-    "price":this.state.price
+    "price":this.state.price,
+    "image":this.props.menu.image
   })
   this.setState({isClicked:false})
   }
@@ -57,10 +58,10 @@ handlePriceChange = event => {
       {(this.state.isClicked==true)?(
         <div>
         <label> Modifier le plat : <br/>
-        <input type="text" name="name" value={this.state.food} onChange={this.handleFoodChange}/>
+        <input type="text" name="name"  onChange={this.handleFoodChange}/>
         </label> 
         <label> Modifier le prix: <br/>
-        <input type="text" name="username"   value={this.state.price} onChange={this.handlePriceChange}/>
+        <input type="text" name="username"  onChange={this.handlePriceChange}/>
         </label>
         </div>
       ):<div><span>{el.food}, {el.price} Dt</span><br/></div>

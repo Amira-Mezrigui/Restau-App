@@ -4,7 +4,7 @@
       "food": "Pâtes au Parmigiano",
       "price": "15",
       "id": 1,
-      "image":"https://media-cdn.tripadvisor.com/media/photo-s/15/5c/32/63/pasta-fruits-de-mer.jpg"
+      "image": "https://media-cdn.tripadvisor.com/media/photo-s/15/5c/32/63/pasta-fruits-de-mer.jpg"
     },
     {
       "id": 2,
@@ -58,6 +58,18 @@
       "id": 10,
       "food": "Pasta pezoti (penne sauce aux tomates et anchois)",
       "price": "15",
+      "image": "https://assets.afcdn.com/recipe/20100120/49265_w1024h768c1cx256cy192.jpg"
+    },
+    {
+      "id": 11,
+      "food": "Pasta pezoti (penne sauce aux tomates et anchois)",
+      "price": "100",
+      "image": "https://assets.afcdn.com/recipe/20100120/49265_w1024h768c1cx256cy192.jpg"
+    },
+    {
+      "id": 12,
+      "food": "Pasta pezoti (penne sauce aux tomates et anchois)",
+      "price": "10",
       "image": "https://assets.afcdn.com/recipe/20100120/49265_w1024h768c1cx256cy192.jpg"
     }
   ],

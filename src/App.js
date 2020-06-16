@@ -2,10 +2,11 @@ import React from 'react';
 import './App.css';
 import { Provider } from 'react-redux';
 import store from './store';
-import MenuContainer  from './containers/menu';
+import MenuContainer  from './containers/user/menu';
 import AdminInterface from './containers/admin/index';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
+import ContainerUser from './containers/user';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <Navbar/>
       <AdminInterface/>
       <Footer/> 
-      <MenuContainer/>
+      <ContainerUser/>
       </div>
     </Provider>
     

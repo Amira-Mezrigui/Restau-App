@@ -55,9 +55,9 @@ export function removeFromApi(res) {
   
   export function editToApi(id,res) {
       return (dispatch) =>
-        axios.put("http://localhost:3000/menu/"+id,res)
+        axios.patch("http://localhost:3000/menu/"+id,res)
         .then((res) =>
-          dispatch(editMenu(res.data))
+          dispatch(editMenu(res.data),window.location.reload(true))
           
         );
     }

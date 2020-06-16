@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {getMenuFromApi} from '../actions/menuAction'
+import {getMenuFromApi} from '../../actions/menuAction'
 import {connect} from 'react-redux'
 
 export class MenuContainer extends Component {

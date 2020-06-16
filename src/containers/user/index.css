@@ -1,0 +1,36 @@
+
+  /* Header */
+
+  .portfolio{
+    padding:6%;
+    text-align:center;
+}
+
+.bio-info{
+    padding: 5%;
+    box-shadow: 0px 0px 4px 0px #b0b3b7;
+}
+
+.bio-image{
+    text-align:center;
+}
+.bio-image img{
+    border-radius:50%;
+    
+}
+.bio-content{
+    text-align:left;
+}
+.bio-content h1{
+    color: orangered;
+}
+
+.bio-content h6{
+    font-size: 20px;
+    color:#708090;
+}
+.bio-content p{
+    font-weight:600;
+    font-size:25px;
+    color:#708090;
+}
