@@ -69,6 +69,10 @@
   ],
   "card": [],
   "profile": {
-    "name": "typicode"
+    "id":1,
+    "name": "typicode",
+    "email":"amira@simplon.com",
+    "password":1234,
+    "type":"admin"
   }
 }

@@ -10,5 +10,10 @@ export const ADD_DISHE= 'GET_DISHE';
 export const REMOVE_DISHE = 'REMOVE_DISHE';
 export const EDIT_DISHE = 'REMOVE_DISHE';
 
+/* =========for user ======= */
+export const GET_USER = 'GET_DISHE';
+export const ADD_USER= 'GET_DISHE';
+
+
 
 
