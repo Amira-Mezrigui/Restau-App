@@ -2,8 +2,8 @@ import {GET_USER} from '../actions/types'
 import {ADD_USER} from '../actions/types'
 
 
-const initialMenu=[]
-export default function menuReducer(state=initialMenu,action){
+const initialUser=[]
+export default function formReducer(state=initialUser,action){
     if(action.type ==GET_USER){
         return action.payload
     } 

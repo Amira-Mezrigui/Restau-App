@@ -7,11 +7,13 @@ import AdminInterface from './containers/admin/index';
 import Footer from './components/footer';
 import Navbar from './components/navbar';
 import ContainerUser from './containers/user';
+import { SignUp } from './containers/form/signUp';
 
 function App() {
   return (
     <Provider store={store}>
       <div className="App">
+      <SignUp/>
       <Navbar/>
       <AdminInterface/>
       <Footer/> 

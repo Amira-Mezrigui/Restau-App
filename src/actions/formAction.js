@@ -1,5 +1,4 @@
-import {GET_USER} from './types'
-import {ADD_USER} from './types'
+import {GET_USER,ADD_USER} from './types'
 
 import axios from 'axios'
 
@@ -17,8 +16,8 @@ export function getUserFromApi() {
         
       );
   }
-  // ADD REQUEST , add a dishe in card
-  export const addToCard =(payload) =>({
+  // ADD REQUEST , add user
+  export const addUser =(payload) =>({
     type:ADD_USER,
     payload
 });
