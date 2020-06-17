@@ -1,9 +1,10 @@
 import {GET_DISHE} from './types'
 import {ADD_DISHE} from './types'
 import {REMOVE_DISHE} from './types'
+import {EDIT_DISHE} from './types'
 import axios from 'axios'
 
-// GET REQUEST , get menu
+// GET REQUEST , get card
 export const getToCard =(payload) =>({
     type:GET_DISHE,
     payload
@@ -17,7 +18,7 @@ export function getFromApi() {
         
       );
   }
-  // ADD REQUEST 
+  // ADD REQUEST , add a dishe in card
   export const addToCard =(payload) =>({
     type:ADD_DISHE,
     payload
@@ -33,7 +34,7 @@ export function addCardToApi(a) {
       );
   }
   
-   // Delete REQUEST 
+   // Delete REQUEST , remove from card
    export const removeCard =(payload) =>({
     type:REMOVE_DISHE,
     payload
@@ -41,24 +42,24 @@ export function addCardToApi(a) {
 
 export function removeFromCard(res) {
     return (dispatch) =>
-      axios.delete("http://localhost:3000/myMenu/"+res)
+      axios.delete("http://localhost:3000/card/"+res)
       .then((res) =>
         dispatch(removeCard(res.data),window.location.reload(true))
         
       );
   }
-  /*
-    // EDIT REQUEST 
-    export const editMenu =(payload) =>({
+  
+    // update quantity of dishe in card
+    export const editQ =(payload) =>({
       type:EDIT_DISHE,
       payload
   });
   
-  export function editToApi(id,res) {
+  export function editQuantity(id,res) {
       return (dispatch) =>
-        axios.patch("http://localhost:3000/myMenu/"+id,res)
+        axios.patch("http://localhost:3000/card/"+id,res)
         .then((res) =>
-          dispatch(editMenu(res.data),window.location.reload(true))
+          dispatch(editQ(res.data),window.location.reload(true))
           
         );
-    } */
+    } 

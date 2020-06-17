@@ -9,6 +9,7 @@ export class ContainerUser extends Component {
   render() {
     return (
       <div className="container-fluid">
+		  <Card/>
 <header class="container portfolio">
 	
 	<div class="bio-info">
@@ -36,7 +37,7 @@ export class ContainerUser extends Component {
 	</div>
 </header>
 <MenuContainer/>
-       <Card/>
+       
       </div>
     );
   }

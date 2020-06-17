@@ -27,6 +27,7 @@ export class MenuContainer extends Component {
                 "name": el.food,
                 "price": el.price,
                 "quantity":1,
+                "totalPrice":el.price
               })}>☑️</button>
             <button> ✖️ </button>
             </div>
